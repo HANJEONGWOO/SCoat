@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+<TextView 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:text="⊙ 정보 입력"/>
+
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:text="  ▶시각장애인 이름" />
+
+<EditText 
+    android:id = "@+id/blinder_name"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:hint="한정우"/>
+
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:text="  ▶보호자 이름" />
+
+<EditText 
+    android:id = "@+id/protecter_name"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:hint="보호자"/>
+
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:text="  ▶보호자 전화번호"/>
+
+<EditText 
+    android:id = "@+id/protecter_pn"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:hint="01093811917"/>
+
+<Button
+    android:id = "@+id/input_info"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:text = "완료" />
+
+</LinearLayout>

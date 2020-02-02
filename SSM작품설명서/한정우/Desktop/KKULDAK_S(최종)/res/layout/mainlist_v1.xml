@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efc003"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110px"
+        android:background="@drawable/menu_bar"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_weight="1">
+"
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/barbtn_tablet"
+                android:gravity="left" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_weight="1"
+            android:gravity="right"
+            >
+
+            <Button
+                android:id="@+id/basket_btn"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/basketbtn_tablet_b"
+                android:gravity="left" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/main_lv_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="#efc003"
+        android:dividerHeight="10dp" />
+
+</LinearLayout>

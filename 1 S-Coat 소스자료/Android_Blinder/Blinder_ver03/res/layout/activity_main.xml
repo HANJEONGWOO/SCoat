@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/btnpage1"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="GPS"
+		/>
+        <Button 
+            android:id="@+id/btnpage2"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PIC"
+            />
+        <Button
+            android:id="@+id/btnpage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="STAT"
+			/>
+		<Button
+		    android:id="@+id/btnpage4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:text="MSG"
+		    />
+    </LinearLayout>
+    	<FrameLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+			>
+		<LinearLayout 
+		    android:id="@+id/page1"
+		    android:orientation="vertical"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			>
+			<TextView  
+				android:id="@+id/status"  
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content" 
+				android:textSize="20sp"
+				android:text="현재 상태 : "
+				/>
+			<TextView  
+				android:id="@+id/result"  
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content" 
+				android:textSize="20sp"
+				android:text="현재 위치 : 알 수 없음"
+				/>
+			<fragment 
+        		android:id="@+id/map"
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		class="com.google.android.gms.maps.MapFragment" />
+		
+		</LinearLayout>		//첫번째 페이지 레이아웃
+		
+		<LinearLayout 
+		    android:id="@+id/page2"
+		    android:orientation="vertical"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			>
+			<TextView 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="두번째  페이지"
+			    />
+		</LinearLayout>	//두번째 페이지 레이아웃
+		
+		<LinearLayout 
+		    android:id="@+id/page3"
+		    android:orientation="vertical"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			>
+			<TextView 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="세번째  페이지"
+			    />
+		</LinearLayout>	//세번째 페이지 레이아웃
+		
+		<LinearLayout 
+		    android:id="@+id/page4"
+		    android:orientation="vertical"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			>
+			<TextView 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="네번째  페이지"
+			    />
+		</LinearLayout>	//네번째 페이지 레이아웃
+		
+		
+    	</FrameLayout>
+</LinearLayout>

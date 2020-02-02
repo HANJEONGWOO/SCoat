@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">You Can Be Angel</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="SeeAll">전체보기</string>
+    <string name="SeeLocal">지역별 보기</string>
+    <string name="SeeAnimal">외형별 보기</string>
+    <string name="BeAngel">찾아주기</string>
+    <string name="title_activity_take_pic">TakePic</string>
+    <string name="Login">로그인</string>
+    <string name="Join">회원가입</string>
+    <string name="Cancel">취소</string>
+</resources>

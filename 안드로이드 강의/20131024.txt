@@ -1,0 +1,35 @@
+1. DataTransfer_kerni 프로젝트가 Input에서 버튼을 클릭하면 Proc클래스를 Intent에 의하여 호출되어야 하는데 프로그램이 죽어버린다 ???
+
+package com.example.datatransfer_kerni;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+public class InformationProc extends Activity {	
+	/** Called when the activity is first created. */	
+	@Override	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.informationproc);
+		
+		Button input_info = (Button)findViewById(R.id.inputinfo);
+		
+		input_info.setOnClickListener(new OnClickListener(){
+			
+		public void onClick(View v) { //버튼을 클릭하면
+			Intent intent = getIntent(); // 이 액티비티를 시작하게 한 인텐트를 호출
+			EditText name_input = (EditText)findViewById(R.id.name_input);
+			EditText digit_input = (EditText)findViewById(R.id.digit_input);
+			intent.putExtra("data_name",name_input.getText().toString());
+			intent.putExtra("data_digit", digit_input.getText().toString());
+			setResult(RESULT_OK,intent); // 추가 정보를 넣은 후 다시 인텐트를 반환합니다.
+			finish(); // 액티비티 종료
+			}
+		
+		});
+		
+	}
+}

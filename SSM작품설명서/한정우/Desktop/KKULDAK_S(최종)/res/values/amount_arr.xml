@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="amount_list">
+        <item>@string/amount_01</item>
+        <item>@string/amount_02</item>
+        <item>@string/amount_03</item>
+        <item>@string/amount_04</item>
+        <item>@string/amount_05</item>
+    </string-array>
+
+</resources>

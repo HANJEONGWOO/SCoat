@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menu4_list">
+        <item>@string/menu4_01</item>
+
+    </string-array>
+
+</resources>

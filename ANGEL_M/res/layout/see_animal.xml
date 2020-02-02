@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/SeeAll"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/seeallbt" />
+
+        <ImageView
+            android:id="@+id/PuppyBt"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/puppy" />
+
+        <ImageView
+            android:id="@+id/KittenBt"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kitten" />
+
+        <ImageView
+            android:id="@+id/DontknBt"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dontknow" />
+
+        <ImageView
+            android:id="@+id/SeeLocal"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/seelocalbt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+            <fragment
+                android:id="@+id/map_animal"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="470dp"
+                android:layout_weight="0.21" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/baskerbackground_2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110px"
+        android:background="@drawable/basket_bar"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_weight="1">
+"
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/barbtn_tablet"
+                android:gravity="left" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_weight="1"
+            android:gravity="right"
+            >
+
+            <Button
+                android:id="@+id/mypage_btn"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/mypagebtn_tablet_b"
+                android:gravity="left" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">"
+
+        <ListView
+            android:id="@+id/main_bk_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#01efc003"
+            android:divider="#01ffc000"
+            android:dividerHeight="10dp" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/all_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center" >
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="370px"
+        android:layout_height="100px"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/basket_btn_b" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

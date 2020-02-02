@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">꿀닭(경상대점)</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section3">마이페이지</string>
+    <string name="title_section2">장바구니</string>
+    <string name="title_section1">주문/예약</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- WebView -->
+    
+    <!-- InputInfo -->
+    
+    <!-- My Photos -->
+     
+</resources>

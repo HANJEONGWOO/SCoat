@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="taste5_list">
+        <item>@string/taste5_01</item>
+    </string-array>
+
+</resources>

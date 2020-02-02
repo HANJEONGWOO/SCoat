@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="menu1_01">큰박스( 11000원 )</string>
+    <string name="menu1_02">작은박스( 6000원 )</string>
+    <string name="menu1_03">큰컵( 2000원 )</string>
+    
+    <string name="menu2_01">큰박스( 13000원 )</string>
+    <string name="menu2_02">작은박스( 7000원 )</string>
+    <string name="menu2_03">큰컵( 2000원 )</string>
+    
+    <string name="menu3_01">큰박스( 13000원 )</string>
+    <string name="menu3_02">작은박스( 7000원 )</string>
+    <string name="menu3_03">큰컵( 2000원 )</string>
+    
+     <string name="menu4_01">컵( 2000원 ) </string>
+
+    <string name="menu5_01">치즈스틱세트( 2000원 )</string>
+    <string name="menu5_02">치즈스틱( 500원 )</string>
+         
+
+    <!-- WebView -->
+
+
+    <!-- InputInfo -->
+
+
+    <!-- My Photos -->
+
+</resources>

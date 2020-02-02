@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="taste1_01">달콤</string>
+    <string name="taste1_02">매콤</string>
+    <string name="taste2_01">없음</string>
+      <string name="taste3_01">없음</string>
+  <string name="taste4_01">달콤</string>
+  <string name="taste4_02">매콥</string>
+  
+        <string name="taste5_01">없음</string>
+
+
+    
+    <!-- WebView -->
+
+
+    <!-- InputInfo -->
+
+
+    <!-- My Photos -->
+
+</resources>

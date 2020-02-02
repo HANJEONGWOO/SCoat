@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+	
+    <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!--
+        <Button
+            android:id="@+id/btnpage1"
+            android:layout_width="wrap_content"
+			android:layout_height="100pt"
+			android:layout_weight="1"
+			android:text="GPS"
+		/>
+        <Button 
+            android:id="@+id/btnpage2"
+            android:layout_width="wrap_content" 
+            android:layout_height="100pt"
+            android:layout_weight="1"
+            android:text="PIC"
+            />
+        <Button
+            android:id="@+id/btnpage3"
+            android:layout_width="wrap_content"
+            android:layout_height="100pt"
+			android:layout_weight="1"
+			android:text="SMS"
+			/>
+		<Button
+		    android:id="@+id/btnpage4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="100pt"
+		    android:layout_weight="1"
+		    android:text="MSG"
+		    />
+		   -->
+		  <ImageView 
+		      android:id="@+id/btnpage1"
+		      android:layout_width="wrap_content"
+		      android:layout_height="100pt"
+		      android:layout_weight="1"
+		      android:background="@drawable/map"
+		      />
+		  <ImageView 
+		      android:id="@+id/btnpage2"
+		      android:layout_width="wrap_content"
+		      android:layout_height="100pt"
+		      android:layout_weight="1"
+		      android:background="@drawable/picture"
+		      />
+		  <ImageView 
+		      android:id="@+id/btnpage3"
+		      android:layout_width="wrap_content"
+		      android:layout_height="100pt"
+		      android:layout_weight="1"
+		      android:background="@drawable/sms"
+		      />
+		  <ImageView 
+		      android:id="@+id/btnpage4"
+		      android:layout_width="wrap_content"
+		      android:layout_height="100pt"
+		      android:layout_weight="1"
+		      android:background="@drawable/bluetooth"
+		      />
+    </LinearLayout>
+    	<FrameLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+			>
+		<LinearLayout 
+		    android:id="@+id/page1"
+		    android:orientation="vertical"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			>
+			
+			<fragment 
+        		android:id="@+id/map"
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		class="com.google.android.gms.maps.MapFragment" />
+		
+		</LinearLayout>		//첫번째 페이지 레이아웃
+		
+		<LinearLayout 
+		    android:id="@+id/page2"
+		    android:orientation="vertical"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			>
+			<ImageView
+			    android:id="@+id/img_pic"
+			    android:layout_width = "match_parent"
+			    android:layout_height= "wrap_content"
+			 />
+		
+		</LinearLayout>	//두번째 페이지 레이아웃
+		
+		<LinearLayout 
+		    android:id="@+id/page3"
+		    android:orientation="vertical"
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			>
+			
+			<ImageView 
+			    android:id = "@+id/green_button"
+			    android:layout_width = "match_parent"
+			    android:layout_height = "wrap_content"
+			    android:src = "@drawable/green_h" />
+			
+			<TextView 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="시각장애인 이름 : "/>
+			<TextView 
+			    android:id = "@+id/blinder_name"
+			    android:layout_width = "match_parent"
+			    android:layout_height = "wrap_content"
+			    android:text =  "한정우" />
+			
+			<TextView 
+			    android:layout_width = "match_parent"
+			    android:layout_height = "wrap_content"
+			    android:text = "보호자 이름 : "/>
+			
+			<TextView
+			    android:id = "@+id/protecter_name"
+			    android:layout_width = "match_parent"
+			    android:layout_height = "wrap_content"
+			    android:text = "정우보호자" />
+			<TextView 
+			    android:layout_width = "match_parent"
+			    android:layout_height = "wrap_content"
+			    android:text = "보호자 전화번호 : "/>
+			<TextView
+			    android:id = "@+id/protecter_pn"
+			    android:layout_width = "match_parent"
+			    android:layout_height = "wrap_content"
+			    android:text = "01093811917" />
+			
+			<Button android:id="@+id/phone"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="SMS 설정"
+			    />
+			     
+		</LinearLayout>	//세번째 페이지 레이아웃
+		
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="vertical"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:id="@+id/page4"
+		    >
+		    <ListView android:id="@+id/in"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:stackFromBottom="true"
+		        android:transcriptMode="alwaysScroll"
+		        android:layout_weight="1"
+		    />
+		    <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        >
+		        <EditText android:id="@+id/edit_text_out"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:layout_gravity="bottom"
+		        />
+		        <Button android:id="@+id/button_send"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@+string/send"
+		        />
+		    </LinearLayout>
+		</LinearLayout>
+		
+		
+    	</FrameLayout>
+</LinearLayout>
+
+<!-- 
+			<TextView  
+				android:id="@+id/status"  
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content" 
+				android:textSize="20sp"
+				android:text="현재 상태 : "
+				/>
+			
+			<TextView  
+				android:id="@+id/result"  
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content" 
+				android:textSize="20sp"
+				android:text="현재 위치 : 알 수 없음"
+				/>
+-->

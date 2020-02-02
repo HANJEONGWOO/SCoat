@@ -1,0 +1,16 @@
+
+MD5 : 2F:84:6D:3B:EA:FC:5F:9D:1D:8F:6C:78:0F:C2:79:2D
+SHA1: 95:A5:BE:C8:E6:EB:CD:B3:76:6C:AE:19:32:41:10:38:BA:26:93:47
+
+API key : AIzaSyANC1Hofj9iSEd-6zELpaOpf7DOVxCs5YU
+
+keytool -list -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+
+API - locationactivity : AIzaSyAXDMJ-WJ4akv4wntElh5tUnS11VPai4uU
+
+API - com.example.mapsposition : AIzaSyAsMp2bfLTKroECwIM3LHh6zzVfNqteLwM
+
+mapview - AIzaSyA904UeNQA0FCIllEDBTruv1ILg51Zo1xk
+
+Couldn't get connection factory client
